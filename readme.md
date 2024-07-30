@@ -13,7 +13,6 @@ This project demonstrates how to integrate Solidity smart contracts with a Node.
 
 - Node.js
 - npm or yarn
-- Solidity Compiler
 
 ## Installation
 
