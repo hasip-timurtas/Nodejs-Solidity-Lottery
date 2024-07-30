@@ -1,5 +1,6 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const { Web3 } = require('web3');
-//updated web3 and hdwallet-provider imports added for convenience
+const { interface, bytecode } = require('./compile');
+require('dotenv').config();
 
-// deploy code will go here
+const provider = new HDWalletProvider(process.env.MNEMONIC, process.env.INFURA_URL);
