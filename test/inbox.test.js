@@ -14,7 +14,7 @@ beforeEach(async () => {
     inbox = await new web3.eth.Contract(abi)
         .deploy({
             data: evm.bytecode.object,
-            arguments: ['Hi there!'],
+            arguments: ['Initial Message'],
         })
         .send({ from: accounts[0], gas: "1000000" });
 });
@@ -26,12 +26,12 @@ describe("Inbox", () => {
 
     it("has a default message", async () => {
         const message = await inbox.methods.getMessage().call();
-        assert.equal(message, "Hi there!");
+        assert.equal(message, "Initial Message");
     });
 
     it("can change the message", async () => {
-        await inbox.methods.setMessage("bye").send({ from: accounts[0] });
+        await inbox.methods.setMessage("Updated Message").send({ from: accounts[0] });
         const message = await inbox.methods.getMessage().call();
-        assert.equal(message, "bye");
+        assert.equal(message, "Updated Message");
     });
 });
