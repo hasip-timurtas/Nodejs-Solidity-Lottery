@@ -26,6 +26,21 @@ This project demonstrates how to integrate Solidity smart contracts with a Node.
     npm install
     ```
 
+## Configuration
+
+1. Create `.env` file:
+
+    `.env.example` file for reference:
+    ```env
+    WALLET_MNEMONIC='your wallet mnemonic here'
+    INFURA_URL=https://your-infura-url-here
+    ```
+
+2. Copy the example file to create your own `.env` file:
+    ```bash
+    cp .env.example .env
+    ```
+
 ## Usage
 
 ### Compile Contracts
