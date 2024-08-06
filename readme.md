@@ -1,6 +1,6 @@
 # Lottery Smart Contract
 
-This project includes Lottery smart contract written with Solidity and demonstrates how to integrate with a Node.js environment. It includes scripts for compiling, deploying, and testing smart contracts.
+This project includes a Lottery smart contract written in Solidity and demonstrates how to integrate it with a Node.js environment. It includes scripts for compiling, deploying, and testing the smart contracts.
 
 ## Features
 
