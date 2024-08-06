@@ -18,8 +18,8 @@ This project includes Lottery smart contract written with Solidity and demonstra
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/hasip-timurtas/nodejs-solidity.git
-    cd nodejs-solidity
+    git clone https://github.com/hasip-timurtas/Nodejs-Solidity-Lottery.git
+    cd Nodejs-Solidity-Lottery
     ```
 2. Install dependencies:
     ```bash
